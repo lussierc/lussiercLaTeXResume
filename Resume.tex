@@ -15,6 +15,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.75]{geometry}
 \usepackage{import}
+\usepackage{multibib,comment}
 
 % important info
 \name{Christian}{Lussier}
@@ -24,6 +25,18 @@
 \social[github]{lussierc} % github
 \homepage{christianlussier.com} % website
 
+\renewcommand*{\cventry}[7][.25em]{
+  \begin{tabular*}{\maincolumnwidth}{l@{\extracolsep{\fill}}r}%
+    {\bfseries #4} & {\bfseries #5}\\%
+    {\itshape #3\ifthenelse{\equal{#6}{}}{}{, #6}} & {\itshape #2}\\%
+  \end{tabular*}%
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
 % Begin the Document:
 \begin{document}
 \makecvtitle
@@ -31,6 +44,8 @@
 % Objective/Summary Section
 % Un-comment the line below and type your summary between the {}'s if wanted.'
 %\small{Type objective/summary here.}
+
+
 
 % ---------- Begin Resume Main Content ----------
 
@@ -40,7 +55,7 @@
 \vspace{2pt}
 
 \begin{itemize} %Begin experience list
-\item{\cventry{May 2021}{Bachelor of Science in Computer Science}{Allegheny College}{Meadville, PA}{\textit{}}{Cumulative GPA of 3.8/4.0. Earned the distinction of being named a "Distinguished Alden Scholar" (Deans List).}}
+\item{\cventry{May 2021}{Bachelor of Science in Computer Science, Economics}{Allegheny College}{Meadville, PA}{\textit{}}{Cumulative GPA of 3.8/4.0. Named a "Distinguished Alden Scholar" (Deans List).}}
 \end{itemize} % End experience list
 %------------------------------------------------
 
@@ -108,7 +123,7 @@
 
 \item \textbf{Officer,} \textit{Allegheny Chapter - Association for Computing Machinery (ACM): }
 \begin{itemize} % Begin ACM info list
-  \item Assist with event planning, setup, and other club activities.
+  \item Assist with event planning, setup, management, and other club activities.
 \end{itemize} % End ACM info list
 \end{itemize} %%% End list of interests & extra-curriculars
 %------------------------------------------------
