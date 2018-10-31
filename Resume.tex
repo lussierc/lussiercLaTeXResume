@@ -25,18 +25,6 @@
 \social[github]{lussierc} % github
 \homepage{christianlussier.com} % website
 
-\renewcommand*{\cventry}[7][.25em]{
-  \begin{tabular*}{\maincolumnwidth}{l@{\extracolsep{\fill}}r}%
-    {\bfseries #4} & {\bfseries #5}\\%
-    {\itshape #3\ifthenelse{\equal{#6}{}}{}{, #6}} & {\itshape #2}\\%
-  \end{tabular*}%
-  \ifx&#7&%
-  \else{\\%
-    \begin{minipage}{\maincolumnwidth}%
-      \small#7%
-    \end{minipage}}\fi%
-  \par\addvspace{#1}}
-
 % Begin the Document:
 \begin{document}
 \makecvtitle
