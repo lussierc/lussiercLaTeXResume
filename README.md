@@ -2,8 +2,8 @@
 This repository holds the files related to my résumé which was coded in LaTeX.
 
 ## Important Files
-- `Resume.tex` holds the code for my résumé.
-- `Resume.pdf` is the actual résumé, in PDF form.
+- `main.tex` holds the code for my résumé.
+- `lussierResume.pdf` is the actual résumé, in PDF form.
 
 ## Overview
 ![A Picture Of My Résumé](images/myResPic.png)
