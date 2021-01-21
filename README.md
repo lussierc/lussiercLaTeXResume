@@ -6,7 +6,7 @@ This repository holds the files related to my résumé which was coded in LaTeX.
 - `Resume.pdf` is the actual résumé, in PDF form.
 
 ## Overview
-![A Picture Of My Résumé](images/resPic.png)
+![A Picture Of My Résumé](images/myResPic.png)
 
 ## Template
 I used a fantastic template by Anurag Gupta to create this LaTeX resume which can be found [here](https://www.overleaf.com/articles/anurags-resume/jdfqhmhqzbxv).
