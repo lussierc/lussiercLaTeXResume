@@ -1,0 +1,132 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.1.4, 27 July 2018) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons 
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+
+
+\documentclass[10pt,a4paper]{altacv}
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font 
+%% folder.
+
+
+% Change the page layout if you need to
+
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Navy}{HTML}{000080}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Navy}
+\colorlet{accent}{Navy}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{black}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\usepackage[colorlinks]{hyperref}
+
+\begin{document}
+
+\name{Christian Lussier}
+\tagline{Computer Science Student}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{lussierc@allegheny.edu}
+  \phone{412-748-0404}
+%  \homepage{www.homepage.com}
+%  \twitter{@twitterhandle}
+  \homepage{www.christianlussier.com}
+  \github{https://github.com/lussierc}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+%   \orcid{orcid.org/0000-0000-0000-0000}
+}
+
+%% Make the header extend all the way to the right, if you want. 
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+
+
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\newline
+\textbf{COMPANY}
+\hfill
+\textbf{January 30, 2020}
+
+\newline
+\medskip
+
+Dear Hiring Team,
+
+\medskip
+
+I am eager to submit my materials for consideration for the Software Engineer Intern, Python position. I found out about this opportunity when I received an email from Allegheny's Computer Science Department about internships at ScienceLogic.
+
+\smallskip
+
+As a junior at Allegheny College, I have learned a variety of technical, communication, and leadership skills that I believe will translate well into the workplace. Through my coursework, I have learned how to utilize tools such as GitHub, R Studio, Django, and Sqlite3. I have also gained experience in using programming languages like Python, Java, C, HTML, and R. I have utilized these tools in a variety of team projects throughout my courses and have gained the valuable experience of working in and leading a team to create fully-functional software ahead of schedule. Last semester, I led a team in the creation of software that will allow students to submit academic petitions to their respective department's faculty at Allegheny College. Outside of class, I have also taken steps to expand my skillset. As the treasurer for Allegheny College’s Ice Hockey Club, I manage a \$17,000 budget, communicate with the league office, and run the team's social media outlets. Also, last year as an Officer in the Allegheny College Chapter of the Association for Computing Machinery, I helped to lead the club, set up events, and communicate with other officers regularly. These roles have greatly strengthened my leadership, teamwork, and communication skills.
+
+\smallskip
+
+I have also demonstrated professionalism and have gained technical and communication skills in my position as a Teaching Assistant for the Allegheny College Department of Computer Science. In this role, I assist students in weekly laboratory sessions by explaining key programming concepts and by helping them better understand and utilize tools such as GitHub, Python, and Java. In addition to this, my work at Target as an electronics team member has taught me how to work in a fast-paced team environment. As a trainer, I have often been called upon to train new team members throughout the store and assist guests during busy times, such as Black Friday and Christmas. This role has given me a better understanding of the customer service experience and has taught me how to better handle pressure in a fast-paced work environment, experiences that I feel could be an asset for this position.
+
+\smallskip
+
+Thank you for taking the time to review my materials and consider my application for the Software Engineer Intern, Python position. I hope to have the opportunity to discuss my interest in the position and qualifications with you further. I am available at your convenience and can be contacted by phone at (412)-748-0404 or by e-mail at lussierc@allegheny.edu. I look forward to hearing from you soon.
+
+\bigbreak
+Sincerely,
+
+\medskip
+
+Christian Lussier
+\end{document}
+
+
+%% end of file `template.tex'.
